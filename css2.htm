@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <https://fonts.google.com/specimen/Antonio></https:>
+    <title>Chess Fundamentals</title>
+
+    <script >
+
+      
+    
+    
+
+     
+        
+       function fn1(){
+       var str = document.getElementById("text1").value;
+       document.getElementById("new1").innerHTML = " Hello " + str + "!How are you today?"
+       }
+
+       function fn2(){
+       var str = document.getElementById("text2").value;
+       document.getElementById("new2").innerHTML = "Your phone number is " + str
+       }
+
+       function fn3(){
+       var str = document.getElementById("text3").value;
+       document.getElementById("new3").innerHTML = "Your email is " + str
+       }
+
+       function fn4(){
+       var str = document.getElementById("text4").value;
+       document.getElementById("new4").innerHTML = "Your rating(s) are " + str
+       }
+    
+    function fn5(){
+     let color = document.querySelectorAll('.box .blue-box');
+      for(i=0; i < color.length; i++){
+        color.style.backgroundColor = 'green';
+      }
+    }
+    </script>
+
+
+    <style>
+      #fundamentalcheckmate {
+        font-family: Helvetica, sans-serif;
+      }
+
+      .box {
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+      }
+
+      .red-box {
+        background-color: red;
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+      }
+      .blue-box {
+        background-color: rgb(0, 0, 255);
+        text-align: center;
+        padding: 10px;
+      }
+
+      .injected-text {
+        text-align: center;
+        margin: -25px;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+<h1 id = "1", style = "text-align: center;">Classical Chess Instruction</h1>
+<p> Hello I'm Tim. I'm a USCF candidate master. I learned chess through classical principles from my old chess 
+    and now I can pass them on to you, as well as focus on anything in particular you want to focus on and answer
+    questions and analyze games in general. I offer lessons both on in person in the Central Florida area and over skype.
+    If you would like to contact me for lessons you can fill out the information below and I will be in touch as soon as possibe.
+</p>
+
+<input id="text1" placeholder = "Enter your name">
+
+<button onclick="fn1()" id = "btn1">submit</button>
+    <div id = 'new1'>
+      <p></p>
+    </div>
+<br>
+
+<input id="text2" placeholder = "Enter your phone number">
+
+<button onclick="fn2()" id = "btn2">submit</button>
+    <div id = 'new2'>
+      <p></p>
+    </div>
+<br>
+
+<input id="text3" placeholder = "Enter your email">
+
+<button onclick="fn3()" id = "btn3">submit</button>
+    <div id = 'new3'>
+      <p></p>
+    </div>
+<br>
+<input id="text4" placeholder = "Enter your chess ratings">
+
+<button onclick="fn4()" id = "btn4">submit</button>
+    <div id = 'new4'>
+      <p></p>
+    </div>
+
+
+
+
+
+
+<br>
+    
+    <h2>The basic principals beginner chess players should learn are as follows, in sequential order</h2>
+    <br>
+
+    <button onclick="fn5()">Click Me to change colors</button>
+
+    <div class="box blue-box" id = '3' >
+      <h1 id="fundamentalcheckmate">Basic Checkmates</h1>
+      <p>
+        The first thing any chess player needs to master after learning the
+        rules of the game, are the basic checkamtes. The most basic is King and
+        Queen versus King. After that comes King and Rook versus King.
+      </p>
+    </div>
+
+    <br>
+
+    <div class="box blue-box">
+      <h2>More advanced checkmates</h2>
+      <p>
+        Sometimes a player has drawing possibilities by trading off his pieces
+        for your pawns. So learnging how to checkmate with two bishops or two
+        knights can be helpful
+      </p>
+    </div>
+
+    <br>
+
+    <div class = "box blue-box">
+    <h1>Basic King and Pawn endings</h1>
+    <p>
+      Beginner chess players should focus first on a board with only a few
+      pieces.
+    </p>
+    </div>
+
+    <br>
+
+  </body>
+</html>
